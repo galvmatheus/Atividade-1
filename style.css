@@ -1,0 +1,40 @@
+/* Tema Claro (padrão) */
+body.light-theme {
+    --bg: #F5F5F5;
+    --textColor: #000;
+    --buttonBg: #000;
+    --buttonText: #fff;
+}
+
+/* Tema Escuro */
+body.dark-theme {
+    --bg: #121212;
+    --textColor: #ffffff;
+    --buttonBg: #ffffff;
+    --buttonText: #000;
+}
+
+/* Aplicando as variáveis */
+body {
+    background-color: var(--bg);
+    color: var(--textColor);
+    font-family: Arial, sans-serif;
+    transition: background 0.5s, color 0.5s;
+}
+
+/* Estilizando o botão */
+button {
+    background: var(--buttonBg);
+    color: var(--buttonText);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background 0.5s, color 0.5s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
